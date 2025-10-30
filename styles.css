@@ -1,0 +1,178 @@
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    margin: 0;
+    background: #f6f9f7;
+    color: #232f34;
+}
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+header {
+    background: #14532d;
+    color: #fff;
+    padding: 0.75rem 0;
+    box-shadow: 0 2px 8px rgba(20,83,45,0.07);
+}
+.nav-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    font-weight: 700;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 28px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+nav a:hover {
+    color: #fbbf24;
+}
+.hero {
+    background: linear-gradient(90deg, #34d399 2%, #14532d 100%);
+    color: #fff;
+    padding: 64px 0 48px 0;
+    text-align: center;
+}
+.hero h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 32px;
+}
+.cta-btn {
+    background: #fbbf24;
+    color: #14532d;
+    padding: 14px 34px;
+    border: none;
+    border-radius: 26px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(251,191,36,0.12);
+    transition: background 0.2s;
+    text-decoration: none;
+    display: inline-block;
+}
+.cta-btn:hover {
+    background: #fff;
+    color: #14532d;
+}
+.cta-btn.secondary {
+    background: #fff;
+    color: #14532d;
+    border: 2px solid #34d399;
+    margin-top: 16px;
+}
+.cta-btn.secondary:hover {
+    background: #34d399;
+    color: #fff;
+}
+main {
+    margin-top: 24px;
+    margin-bottom: 36px;
+}
+.section {
+    margin-bottom: 54px;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.07);
+    padding: 36px 26px;
+}
+.section h2 {
+    font-size: 1.7rem;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+.icon {
+    font-size: 1.5rem;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+    margin-top: 24px;
+}
+.card {
+    background: #e8f5e9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 12px rgba(44,62,80,0.04);
+    transition: transform 0.14s;
+}
+.card:hover {
+    transform: translateY(-5px) scale(1.03);
+}
+.card h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    color: #14532d;
+}
+.mitigasi-list {
+    list-style-type: disc;
+    margin-left: 22px;
+    margin-bottom: 20px;
+}
+.tips-box {
+    background: #fffbe6;
+    border-left: 6px solid #fbbf24;
+    padding: 16px 28px;
+    border-radius: 8px;
+    margin-top: 18px;
+    font-size: 1.05rem;
+}
+.kontak-box {
+    background: #e8f5e9;
+    border-radius: 10px;
+    padding: 18px;
+    margin-top: 12px;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.04);
+}
+.kontak-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.kontak-box li {
+    margin-bottom: 7px;
+}
+.kontak-box a {
+    color: #14532d;
+    text-decoration: underline;
+}
+footer {
+    background: #14532d;
+    color: #fff;
+    text-align: center;
+    padding: 22px 0;
+    font-size: 1.05rem;
+    border-top: 6px solid #fbbf24;
+    letter-spacing: 1px;
+}
+@media (max-width: 700px) {
+    .container {
+        padding: 0 7px;
+    }
+    .section {
+        padding: 24px 7px;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .nav-flex {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
